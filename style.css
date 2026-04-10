@@ -799,7 +799,7 @@ svg { display: block; }
 
 /* Progress bars */
 .skill-list { display: flex; flex-direction: column; gap: 16px; }
-.skill-item { }
+.skill-item { display: flex; flex-direction: column; }
 .skill-info {
   display: flex;
   align-items: center;
