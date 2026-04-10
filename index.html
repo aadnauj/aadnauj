@@ -1,100 +1,607 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — ML Enthusiast & Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <title>Juanda Portfolio</title>
+  <!-- ═══════════════════════════════════ NAVBAR ═══════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>dev<span class="logo-accent">/</span><span class="logo-bracket">&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">Juanda</div>
-
-        <div class="nav-center" id="navMenu">
-          <a href="#home">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#education">Education</a>
+  <!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-tag reveal-up" style="--d:0.1s">
+          <span class="tag-dot"></span>Available for opportunities
         </div>
-
-        <div class="nav-right">
-          <a href="#contact" class="contact-btn"> Contact </a>
-        </div>
-
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
-
-    <section id="home" class="hero">
-      <div class="hero-visual left">
-        <div class="floating-card">
-          &lt;python&gt;
-          <br />
-          model.fit(data)
-          <br />
-          accuracy = 0.91
-        </div>
-
-        <div class="floating-card delay1">
-          &lt;ml&gt;
-          <br />
-          clustering
-          <br />
-          classification
-        </div>
-      </div>
-
-      <div class="hero-text center">
-        <h1 class="fade-in">Hi, I'm Juanda</h1>
-
-        <h2 class="typing-loop">Machine Learning Student & Web Developer</h2>
-
-        <p class="fade-in delay-1">
-          I build machine learning models and web applications to solve
-          real-world problems using data and code.
+        <h1 class="hero-name reveal-up" style="--d:0.25s">
+          Hi, I'm<br><span class="name-gradient">Your Name</span>
+        </h1>
+        <p class="hero-role reveal-up" style="--d:0.4s">
+          <span class="role-text" id="roleText"></span><span class="cursor-blink">|</span>
         </p>
-
-        <div class="hero-buttons fade-in delay-2">
-          <a href="#projects" class="btn-primary">View Projects</a>
-          <a href="#contact" class="btn-secondary">Contact Me</a>
-        </div>
-
-        <div class="social-icons fade-in delay-3">
-          <!-- icon tetap -->
-        </div>
-      </div>
-
-      <div class="hero-visual right">
-        <div class="floating-card delay2">
-          &lt;html&gt;
-          <br />
-          portfolio
-          <br />
-          interactive UI
-        </div>
-
-        <div class="floating-card delay3">
-          &lt;js&gt;
-          <br />
-          dynamic
-          <br />
-          frontend logic
+        <p class="hero-desc reveal-up" style="--d:0.55s">
+          Passionate about building intelligent systems and elegant software. I blend machine learning expertise with clean, scalable code to create solutions that matter.
+        </p>
+        <div class="hero-btns reveal-up" style="--d:0.7s">
+          <a href="#projects" class="btn-primary">
+            <span>View Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#" class="btn-ghost" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            <span>Download CV</span>
+          </a>
         </div>
       </div>
-    </section>
-    <section id="projects"></section>
-    <section id="skills"></section>
-    <section id="education"></section>
-    <section id="contact"></section>
+      <div class="hero-photo reveal-right" style="--d:0.3s">
+        <div class="photo-ring ring-outer"></div>
+        <div class="photo-ring ring-inner"></div>
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="45" r="22" fill="url(#avatarGrad)"/>
+              <ellipse cx="60" cy="100" rx="35" ry="22" fill="url(#avatarGrad)"/>
+              <defs>
+                <linearGradient id="avatarGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#6366f1"/>
+                  <stop offset="1" stop-color="#8b5cf6"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <p>Your Photo</p>
+          </div>
+        </div>
+        <div class="photo-badge badge-ml">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          ML
+        </div>
+        <div class="photo-badge badge-dev">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          DEV
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- ═══════════════════════════════════ ABOUT ═══════════════════════════════════ -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// about_me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p class="about-lead">
+            I'm a student developer deeply fascinated by the intersection of <span class="text-accent">Artificial Intelligence</span> and real-world problem solving.
+          </p>
+          <p class="about-body">
+            My journey started with curiosity about how machines can learn from data. Today, I combine that curiosity with hands-on software development — building tools that are both intelligent and usable. I believe the best code is not just functional, but thoughtful.
+          </p>
+          <p class="about-body">
+            When I'm not training models or writing code, I'm reading research papers, exploring new frameworks, or working on side projects that push my limits.
+          </p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-label">Based in</span>
+              <span class="meta-value">Indonesia</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Focus</span>
+              <span class="meta-value">ML + Dev</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Status</span>
+              <span class="meta-value status-active">
+                <span class="status-dot"></span>Open to work
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards reveal-right">
+          <div class="highlight-card" style="--c1:#6366f1;--c2:#818cf8">
+            <div class="hcard-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+            </div>
+            <h3>Critical Thinking</h3>
+            <p>Approaching problems analytically, breaking complex challenges into clear solutions.</p>
+          </div>
+          <div class="highlight-card" style="--c1:#8b5cf6;--c2:#a78bfa">
+            <div class="hcard-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3>Data Analysis</h3>
+            <p>Extracting meaningful insights from raw data to drive informed decisions.</p>
+          </div>
+          <div class="highlight-card" style="--c1:#3b82f6;--c2:#60a5fa">
+            <div class="hcard-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Programming</h3>
+            <p>Writing clean, maintainable code across multiple languages and paradigms.</p>
+          </div>
+          <div class="highlight-card" style="--c1:#06b6d4;--c2:#22d3ee">
+            <div class="hcard-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3>AI Enthusiasm</h3>
+            <p>Driven passion for machine learning, deep learning, and AI-powered innovation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ EDUCATION ═══════════════════════════════════ -->
+  <section id="education" class="section education">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// education</span>
+        <h2 class="section-title">Learning Journey</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line" id="timelineLine"></div>
+
+        <!-- Item 1 — Left -->
+        <div class="timeline-item left reveal-left">
+          <div class="timeline-content">
+            <div class="tl-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="tl-body">
+              <span class="tl-year">2023 – 2024</span>
+              <h3 class="tl-title">Student Pijak</h3>
+              <p class="tl-inst">Pijak Program</p>
+              <p class="tl-desc">Intensive training program focusing on practical coding skills, problem solving fundamentals, and collaborative software development.</p>
+              <div class="tl-tags">
+                <span>Coding Bootcamp</span>
+                <span>Problem Solving</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-node">
+            <div class="node-inner"></div>
+          </div>
+        </div>
+
+        <!-- Item 2 — Right (Present) -->
+        <div class="timeline-item right reveal-right">
+          <div class="timeline-node">
+            <div class="node-inner node-active"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="tl-icon tl-icon-active">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="tl-body">
+              <div class="tl-header-row">
+                <span class="tl-year">2024 – Now</span>
+                <span class="badge-present">● Present</span>
+              </div>
+              <h3 class="tl-title">Universitas</h3>
+              <p class="tl-inst">Your University Name</p>
+              <p class="tl-desc">Currently pursuing a degree in Computer Science / Informatics. Focusing on machine learning, data structures, algorithms, and software engineering principles.</p>
+              <div class="tl-tags">
+                <span>Computer Science</span>
+                <span>Machine Learning</span>
+                <span>Algorithms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 — Left -->
+        <div class="timeline-item left reveal-left">
+          <div class="timeline-content">
+            <div class="tl-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+            </div>
+            <div class="tl-body">
+              <span class="tl-year">2021 – 2024</span>
+              <h3 class="tl-title">SMA</h3>
+              <p class="tl-inst">Your High School Name</p>
+              <p class="tl-desc">Graduated from high school with strong interest in mathematics and natural sciences. First exposure to programming sparked a lifelong passion for technology.</p>
+              <div class="tl-tags">
+                <span>IPA / Science</span>
+                <span>Mathematics</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-node">
+            <div class="node-inner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ SKILLS ═══════════════════════════════════ -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// skills</span>
+        <h2 class="section-title">Technical Arsenal</h2>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Programming -->
+        <div class="skill-category reveal-up" style="--d:0.1s">
+          <div class="scat-header">
+            <div class="scat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-icon">🐍</span>
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-icon">🎯</span>
+                <span class="skill-name">Dart</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-icon">⚡</span>
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-icon">🌐</span>
+                <span class="skill-name">HTML</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-icon">🎨</span>
+                <span class="skill-name">CSS</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="skill-category reveal-up" style="--d:0.2s">
+          <div class="scat-header">
+            <div class="scat-icon scat-icon-ml">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3>Machine Learning</h3>
+          </div>
+          <div class="skill-tags-wrap">
+            <div class="skill-tag-item">
+              <div class="stag-dot"></div>
+              <span>Data Preprocessing</span>
+            </div>
+            <div class="skill-tag-item">
+              <div class="stag-dot"></div>
+              <span>Clustering</span>
+            </div>
+            <div class="skill-tag-item">
+              <div class="stag-dot"></div>
+              <span>Model Evaluation</span>
+            </div>
+            <div class="skill-tag-item">
+              <div class="stag-dot"></div>
+              <span>Basic Deep Learning</span>
+            </div>
+            <div class="skill-tag-item">
+              <div class="stag-dot"></div>
+              <span>scikit-learn</span>
+            </div>
+            <div class="skill-tag-item">
+              <div class="stag-dot"></div>
+              <span>Pandas & NumPy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal-up" style="--d:0.3s">
+          <div class="scat-header">
+            <div class="scat-icon scat-icon-tools">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="tools-grid">
+            <div class="tool-card">
+              <div class="tool-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2.6 10.59L8.38 4.8l1.69 1.7c-.24.85.15 1.78.93 2.23v5.54c-.6.34-1 .99-1 1.73a2 2 0 002 2 2 2 0 002-2c0-.74-.4-1.39-1-1.73V9.41l2.07 2.09c-.07.15-.07.32-.07.5a2 2 0 002 2 2 2 0 002-2 2 2 0 00-2-2c-.2 0-.37.04-.53.1L14.41 7.5A2 2 0 0013 5.5a2 2 0 00-2 2c0 .26.07.51.16.73L9.5 6.5 4.69 11.3l-2.09-2.71M21.4 13.41l-5.79 5.79-1.69-1.7c.24-.85-.15-1.78-.93-2.23V9.73c.6-.34 1-.99 1-1.73a2 2 0 00-2-2 2 2 0 00-2 2c0 .74.4 1.39 1 1.73v5.13l-2.07-2.09c.07-.15.07-.32.07-.5a2 2 0 00-2-2 2 2 0 00-2 2 2 2 0 002 2c.2 0 .37-.04.53-.1L9.59 16.5A2 2 0 0011 18.5a2 2 0 002-2c0-.26-.07-.51-.16-.73l1.66-1.66 4.81-4.8 2.09 4.1z"/></svg>
+              </div>
+              <span>Git</span>
+            </div>
+            <div class="tool-card">
+              <div class="tool-icon tool-github">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <span>GitHub</span>
+            </div>
+            <div class="tool-card">
+              <div class="tool-icon tool-colab">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              </div>
+              <span>Colab</span>
+            </div>
+            <div class="tool-card">
+              <div class="tool-icon tool-vscode">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>
+              </div>
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ PROJECTS ═══════════════════════════════════ -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// projects</span>
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-sub">Things I've built and shipped</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up" style="--d:0.05s">
+          <div class="pcard-preview">
+            <div class="pcard-preview-bg bg-finance"></div>
+            <div class="pcard-preview-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-meta">
+              <span class="pcard-num">01</span>
+              <div class="pcard-tags">
+                <span class="ptag">Dart</span>
+                <span class="ptag">Flutter</span>
+                <span class="ptag">Mobile</span>
+              </div>
+            </div>
+            <h3 class="pcard-title">Finance Tracker App</h3>
+            <p class="pcard-desc">A cross-platform mobile application for tracking personal income and expenses. Features beautiful charts, category management, and monthly reports.</p>
+            <div class="pcard-footer">
+              <a href="#" class="pcard-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+              <a href="#" class="pcard-btn pcard-btn-ghost">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--d:0.15s">
+          <div class="pcard-preview">
+            <div class="pcard-preview-bg bg-ml"></div>
+            <div class="pcard-preview-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><line x1="4" y1="8" x2="10" y2="11"/><line x1="20" y1="8" x2="14" y2="11"/><line x1="4" y1="16" x2="10" y2="13"/><line x1="20" y1="16" x2="14" y2="13"/></svg>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-meta">
+              <span class="pcard-num">02</span>
+              <div class="pcard-tags">
+                <span class="ptag">Python</span>
+                <span class="ptag">scikit-learn</span>
+                <span class="ptag">ML</span>
+              </div>
+            </div>
+            <h3 class="pcard-title">ML Clustering Project</h3>
+            <p class="pcard-desc">Machine learning project implementing K-Means and hierarchical clustering algorithms on real-world datasets with full data preprocessing pipeline.</p>
+            <div class="pcard-footer">
+              <a href="#" class="pcard-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+              <a href="#" class="pcard-btn pcard-btn-ghost">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--d:0.25s">
+          <div class="pcard-preview">
+            <div class="pcard-preview-bg bg-portfolio"></div>
+            <div class="pcard-preview-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-meta">
+              <span class="pcard-num">03</span>
+              <div class="pcard-tags">
+                <span class="ptag">HTML</span>
+                <span class="ptag">CSS</span>
+                <span class="ptag">JS</span>
+              </div>
+            </div>
+            <h3 class="pcard-title">Portfolio Website</h3>
+            <p class="pcard-desc">This very portfolio — built from scratch with vanilla HTML, CSS, and JavaScript. Featuring smooth animations, dark theme, and responsive design.</p>
+            <div class="pcard-footer">
+              <a href="#" class="pcard-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+              <a href="#" class="pcard-btn pcard-btn-ghost">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--d:0.35s">
+          <div class="pcard-preview">
+            <div class="pcard-preview-bg bg-landing"></div>
+            <div class="pcard-preview-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-meta">
+              <span class="pcard-num">04</span>
+              <div class="pcard-tags">
+                <span class="ptag">HTML</span>
+                <span class="ptag">CSS</span>
+                <span class="ptag">Design</span>
+              </div>
+            </div>
+            <h3 class="pcard-title">Landing Page Students' Union</h3>
+            <p class="pcard-desc">A modern landing page for the students' union organization. Features event calendar, announcements, committee profiles, and registration form.</p>
+            <div class="pcard-footer">
+              <a href="#" class="pcard-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+              <a href="#" class="pcard-btn pcard-btn-ghost">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ CONTACT ═══════════════════════════════════ -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">Have a project in mind? Let's build something together.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left reveal-left">
+          <div class="contact-headline">
+            <h3>Open for<br><span class="text-gradient">collaboration</span></h3>
+          </div>
+          <p class="contact-info-text">Whether it's a machine learning project, a web application, or just a casual chat about tech — my inbox is always open.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub">
+              <div class="social-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <span>GitHub</span>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <div class="social-icon social-linkedin">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:youremail@example.com" class="social-link" aria-label="Email">
+              <div class="social-icon social-email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ FOOTER ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>dev<span class="logo-accent">/</span><span class="logo-bracket">&gt;</span>
+        </a>
+        <p class="footer-copy">© 2026 Portfolio. Built with HTML, CSS, JavaScript.</p>
+        <a href="#home" class="back-top" id="backTop" aria-label="Back to top">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
