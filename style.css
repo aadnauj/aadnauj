@@ -24,7 +24,7 @@ nav{pointer-events:all;display:flex;align-items:center;gap:4px;padding:7px 10px 
   backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
   box-shadow:0 8px 40px rgba(0,0,0,.28),0 0 0 1px rgba(46,143,255,.07);
   transition:background .4s,border-color .4s}
-.nl{font-family:'Syne',sans-serif;font-weight:800;font-size:1.05rem;
+.nl{font-family:'Syne',sans-serif;font-weight:650;font-size:1.05rem;
   background:linear-gradient(90deg,var(--blue2),var(--cyan));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
   margin-right:10px;letter-spacing:-.5px;white-space:nowrap}
@@ -63,7 +63,7 @@ nav{pointer-events:all;display:flex;align-items:center;gap:4px;padding:7px 10px 
 [data-theme="light"] .hbg{
   background:radial-gradient(ellipse 110% 75% at 50% 50%,rgba(26,111,216,.08) 0%,transparent 65%),var(--bg)}
 .hcon{position:relative;z-index:2;max-width:680px}
-.hn{font-family:'Syne',sans-serif;font-size:clamp(3.8rem,10vw,7.5rem);font-weight:800;
+.hn{font-family:'Syne',sans-serif;font-size:clamp(3.8rem,10vw,7.5rem);font: weight 500px;;
   line-height:.92;letter-spacing:-3px;color:var(--tp);animation:fu .9s .3s both}
 .hn span{background:linear-gradient(90deg,var(--blue2),var(--cyan));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
