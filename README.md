@@ -1,4 +1,4 @@
-# Juanda 👋
+# Hiii 👋
 
 ![typing](https://readme-typing-svg.herokuapp.com/?color=3A86FF\&size=28\&center=true\&vCenter=true\&width=600\&lines=AI+Enthusiast;Machine+Learning+Learner;Vibe+Coder;Future+AI+Engineer)
 
