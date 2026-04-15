@@ -1,111 +1,101 @@
-# Hiii 👋
+<div align="center">
 
-![typing](https://readme-typing-svg.herokuapp.com/?color=3A86FF\&size=28\&center=true\&vCenter=true\&width=600\&lines=AI+Enthusiast;Machine+Learning+Learner;Vibe+Coder;Future+AI+Engineer)
+# ⚡ Juanda
 
----
+### AI Enthusiast • Vibe Coder • Future AI Engineer
 
-## About Me
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=2500&pause=800&color=00F5FF&center=true&vCenter=true&width=500&lines=Building+with+Logic;Learning+Artificial+Intelligence;Turning+Ideas+into+Code;Always+Improving" />
 
-I am currently focused on building strong fundamentals in Artificial Intelligence and Machine Learning.
-I enjoy exploring ideas through coding and creating simple but meaningful digital products.
-
-I believe consistency and real projects are the fastest way to grow technical skills.
+</div>
 
 ---
 
-## Current Direction
+## 🧠 About Me
 
-* Learning Machine Learning fundamentals
-* Building portfolio projects consistently
-* Exploring practical AI implementation
-* Improving logical and problem-solving thinking
-* Developing modern landing pages
+```yaml
+name: Juanda
+role: Informatics Student
+focus: Artificial Intelligence
+mindset: Logical, Strategic, Consistent
+interests:
+  - Machine Learning
+  - Data Analysis
+  - Web Development
+  - Problem Solving
+```
 
 ---
 
-## Skills
+## ⚙️ Tech Stack
 
-### Programming
+<div align="center">
 
-* Dart
-* HTML
-* CSS
-* JavaScript (basic)
+### Languages
 
-### AI & Data
-
-* Machine Learning fundamentals
-* Neural Network basics
-* Data preprocessing concepts
+![Python](https://img.shields.io/badge/Python-0A192F?style=for-the-badge\&logo=python\&logoColor=00F5FF)
+![Dart](https://img.shields.io/badge/Dart-0A192F?style=for-the-badge\&logo=dart\&logoColor=00F5FF)
+![JavaScript](https://img.shields.io/badge/JavaScript-0A192F?style=for-the-badge\&logo=javascript\&logoColor=00F5FF)
+![HTML](https://img.shields.io/badge/HTML-0A192F?style=for-the-badge\&logo=html5\&logoColor=00F5FF)
+![CSS](https://img.shields.io/badge/CSS-0A192F?style=for-the-badge\&logo=css3\&logoColor=00F5FF)
 
 ### Tools
 
-* Git
-* GitHub
-* VS Code
+![Git](https://img.shields.io/badge/Git-0A192F?style=for-the-badge\&logo=git\&logoColor=00F5FF)
+![GitHub](https://img.shields.io/badge/GitHub-0A192F?style=for-the-badge\&logo=github\&logoColor=00F5FF)
+![Flutter](https://img.shields.io/badge/Flutter-0A192F?style=for-the-badge\&logo=flutter\&logoColor=00F5FF)
+![Pandas](https://img.shields.io/badge/Pandas-0A192F?style=for-the-badge\&logo=pandas\&logoColor=00F5FF)
+![Scikit-learn](https://img.shields.io/badge/ScikitLearn-0A192F?style=for-the-badge\&logo=scikit-learn\&logoColor=00F5FF)
+
+</div>
 
 ---
 
-## Project Focus
+## 📊 GitHub Analytics
 
-### AI / Machine Learning
+<div align="center">
 
-* Machine learning learning notes
-* Linear regression experiment
-* Classification practice
-* Neural network basic implementation
-* Dataset exploration
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=aadnauj&show_icons=true&theme=tokyonight&hide_border=true"/>
+<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=aadnauj&theme=tokyonight&hide_border=true"/>
 
-### Web Development
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aadnauj&layout=compact&theme=tokyonight&hide_border=true"/>
 
-* Modern landing page
-* Portfolio website
-* UI animation experiment
-* Responsive layout practice
+</div>
+---
 
-### App Development
+## 🚀 Current Focus
 
-* Finance tracker app (Dart)
-* Simple notes app
-* Productivity app basic
+* Artificial Intelligence Engineering
+* Machine Learning Workflow
+* Data Cleaning & Visualization
+* Building Useful Digital Products
 
 ---
 
-## Mindset
+## 🧩 Featured Projects
 
-Build consistently
-Learn practically
-Improve continuously
-
----
-
-## Goals
-
-* Become AI Engineer
-* Build strong project portfolio
-* Master practical Machine Learning workflow
-* Create useful digital products
-* Develop consistent coding habit
+| Project         | Description                        | Tech        |
+| --------------- | ---------------------------------- | ----------- |
+| Finance Tracker | App for tracking income & expenses | Dart        |
+| Data Analysis   | Exploratory data projects          | Python      |
+| Landing Page    | Modern responsive websites         | HTML CSS JS |
+| AI Experiments  | Learning ML concepts               | Python      |
 
 ---
 
-## GitHub Stats
+## 🌐 Connect
 
-![stats](https://github-readme-stats-sigma-five.vercel.app/api?username=aadnauj&show_icons=true&theme=tokyonight)
+<div align="center">
 
-![langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=aadnauj&layout=compact&theme=tokyonight)
+[![GitHub](https://img.shields.io/badge/GitHub-0A192F?style=for-the-badge\&logo=github\&logoColor=00F5FF)](https://github.com/YOUR_USERNAME)
 
----
-
-## Future Improvements
-
-* Deploy AI-based projects
-* Build interactive portfolio website
-* Publish more structured repositories
-* Improve code quality and documentation
+</div>
 
 ---
 
-## Quote
+<div align="center">
 
-Consistency beats intensity.
+### ⚡ "Consistency beats motivation"
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F5FF,100:0077FF&height=120&section=footer"/>
+
+</div>
