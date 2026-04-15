@@ -91,9 +91,9 @@ Improve continuously
 
 ## GitHub Stats
 
-![stats](https://github-readme-stats.vercel.app/api?username=aadnauj&show_icons=true&theme=tokyonight)
+![stats](https://github-readme-stats-sigma-five.vercel.app/api?username=aadnauj&show_icons=true&theme=tokyonight)
 
-![langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aadnauj&layout=compact&theme=tokyonight)
+![langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=aadnauj&layout=compact&theme=tokyonight)
 
 ---
 
