@@ -73,3 +73,30 @@ document.querySelectorAll('a,button,.skill-card,.project-card,.about-card')
     cursor.style.transform='scale(1)';
   });
 });
+
+const container = document.getElementById("particles");
+
+function createParticle(){
+
+  const p = document.createElement("div");
+
+  p.classList.add("particle");
+
+  p.style.left = Math.random()*100 + "vw";
+
+  p.style.animationDuration = (6 + Math.random()*6) + "s";
+
+  p.style.setProperty("--dx", (Math.random()*40-20)+"px");
+
+  container.appendChild(p);
+
+  setTimeout(()=>{
+
+    p.remove();
+
+  },12000);
+
+}
+
+setInterval(createParticle,120);
+

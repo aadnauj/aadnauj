@@ -249,3 +249,48 @@ footer b{color:var(--blue2);font-weight:500}
  height:100%;
  z-index:0;
 }
+
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(0,212,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.04) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,black 30%,transparent 100%);
+}
+[data-theme="light"] .hero-grid{
+  background-image:linear-gradient(rgba(0,150,220,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,150,220,.06) 1px,transparent 1px);
+}
+.hero-orb{
+  position:absolute;border-radius:50%;filter:blur(80px);
+  animation:orbFloat 8s ease-in-out infinite;
+}
+.orb1{width:500px;height:500px;background:radial-gradient(circle,rgba(0,153,255,.18),transparent 70%);top:-10%;left:-10%;animation-delay:0s;}
+.orb2{width:400px;height:400px;background:radial-gradient(circle,rgba(123,47,255,.14),transparent 70%);bottom:0%;right:-5%;animation-delay:-3s;}
+.orb3{width:300px;height:300px;background:radial-gradient(circle,rgba(0,212,255,.12),transparent 70%);top:50%;left:60%;animation-delay:-5s;}
+
+@keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1);}33%{transform:translate(30px,-20px) scale(1.05);}66%{transform:translate(-20px,15px) scale(.95);}}
+
+/* Particles */
+.particles-global{
+ position:fixed;
+ inset:0;
+ pointer-events:none;
+ z-index:1;
+ overflow:hidden;
+}
+
+.particle{
+ position:absolute;
+ width:2px;
+ height:2px;
+ background:var(--cyan);
+ border-radius:50%;
+ box-shadow:0 0 8px var(--cyan);
+ animation:particleFloat linear infinite;
+ opacity:0;
+}
+@keyframes particleFloat{
+  0%{transform:translateY(100vh) translateX(0);opacity:0;}
+  10%{opacity:1;}
+  90%{opacity:.5;}
+  100%{transform:translateY(-10px) translateX(var(--dx));opacity:0;}
+}

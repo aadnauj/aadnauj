@@ -1,216 +1,513 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juanda — Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juanda — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="particles-global" id="particles"></div>
+    <div id="cursor"></div>
+    <div id="cursor-glow"></div>
+    <canvas id="bg-canvas"></canvas>
 
-<div id="cursor"></div>
-<div id="cursor-glow"></div>
-<canvas id="bg-canvas"></canvas>
-
-<!-- FLOATING PILL NAVBAR -->
-<div class="nw">
-  <nav>
-    <div class="nl">Ju</div>
-    <ul class="ni" id="ni">
-      <li><a href="#hero" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="nr">
-      <button class="tb" id="tb" aria-label="Toggle theme"></button>
-      <div class="hb" id="hb"><span></span><span></span><span></span></div>
+    <!-- FLOATING PILL NAVBAR -->
+    <div class="nw">
+      <nav>
+        <div class="nl">Ju</div>
+        <ul class="ni" id="ni">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nr">
+          <button class="tb" id="tb" aria-label="Toggle theme"></button>
+          <div class="hb" id="hb"><span></span><span></span><span></span></div>
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
-<div class="mm" id="mm">
-  <a href="#hero">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
-  <a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
-</div>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hbg"></div>
-  <div class="hcon">
-    <h1 class="hn">Hi, I'm <span>Juanda</span></h1>
-    <div class="htw"><div class="ht"><span id="tt"></span><span class="hcur"></span></div></div>
-    <p class="htag">"Building digital solutions with structured logic, modern design, and a continuous learning mindset."</p>
-    <div class="hbs">
-      <a href="#projects" class="bp"><span>View Portfolio</span></a>
-      <a href="#contact" class="bo">Contact Me</a>
+    <div class="mm" id="mm">
+      <a href="#hero">Home</a><a href="#about">About</a
+      ><a href="#skills">Skills</a> <a href="#projects">Projects</a
+      ><a href="#education">Education</a><a href="#contact">Contact</a>
     </div>
-  </div>
-  <div class="shi"><div class="sm"></div></div>
-</section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="ai">
-    <div class="rev"><p class="sl">About Me</p><h2 class="st">Who I Am</h2><div class="sd"></div></div>
-    <div class="rev">
-      <p class="ab">Hello everyone, I'm Juanda a student with a strong interest in technology, especially web development and machine learning. I'm enjoys building structured projects using logical approaches and focuses on creating clean and user-friendly interfaces.</p>
-      <p class="ab">I have experience developing academic applications using Dart and building simple websites. I'm interested in problem solving, system logic, and continuously improving technical skills.</p>
-      <div class="foc">
-        <p class="fl">Core Focus Areas</p>
-        <div class="ft">
-          <span class="ftg">Logical Thinking</span>
-          <span class="ftg">Simple Effective Design</span><span class="ftg">Continuous Improvement</span>
-          <span class="ftg">Analytical Problem Solving</span>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hbg">
+        <div class="hero-grid"></div>
+        <div class="hero-orb orb1"></div>
+        <div class="hero-orb orb2"></div>
+        <div class="hero-orb orb3"></div>
+      </div>
+      <div class="hcon">
+        <h1 class="hn">Hi, I'm <span>Juanda</span></h1>
+        <div class="htw">
+          <div class="ht"><span id="tt"></span><span class="hcur"></span></div>
+        </div>
+        <p class="htag">
+          "Building digital solutions with structured logic, modern design, and
+          a continuous learning mindset."
+        </p>
+        <div class="hbs">
+          <a href="#projects" class="bp"><span>View Portfolio</span></a>
+          <a href="#contact" class="bo">Contact Me</a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+      <div class="shi"><div class="sm"></div></div>
+    </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="rev"><p class="sl">Skills</p><h2 class="st">Tech Stack</h2><div class="sd"></div></div>
-  <div class="skg">
-    <div class="skc">
-      <div class="sko"><svg fill="none" viewBox="0 0 24 24"><path d="M8 3L3 12l5 9M16 3l5 9-5 9M14 6l-4 12" stroke="#2e8fff" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-      <p class="skt">Programming</p>
-      <div class="sktg"><span class="stg b">Dart</span><span class="stg b">Python</span><span class="stg b">JavaScript</span><span class="stg c">HTML</span><span class="stg c">CSS</span></div>
-    </div>
-    <div class="skc">
-      <div class="sko"><svg fill="none" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#00d4ff" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="#00d4ff" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-      <p class="skt">Development</p>
-      <div class="sktg"><span class="stg c">Web Development</span><span class="stg b">Git & GitHub</span><span class="stg c">Responsive Layout</span><span class="stg b">UI Structure</span></div>
-    </div>
-    <div class="skc">
-      <div class="sko"><svg fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" stroke="#2e8fff" stroke-width="1.8"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" stroke="#2e8fff" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-      <p class="skt">Computer Science</p>
-      <div class="sktg"><span class="stg s">Machine Learning</span><span class="stg b">Problem Solving</span><span class="stg c">Logical Thinking</span></div>
-    </div>
-    <div class="skc">
-      <div class="sko"><svg fill="none" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#7ee8ff" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="#7ee8ff" stroke-width="1.8"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#7ee8ff" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-      <p class="skt">Soft Skills</p>
-      <div class="sktg"><span class="stg s">Analytical Mindset</span><span class="stg s">Structured Workflow</span><span class="stg s">Continuous Learning</span></div>
-    </div>
-  </div>
-</section>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="ai">
+        <div class="rev">
+          <p class="sl">About Me</p>
+          <h2 class="st">Who I Am</h2>
+          <div class="sd"></div>
+        </div>
+        <div class="rev">
+          <p class="ab">
+            Hello everyone, I'm Juanda a student with a strong interest in
+            technology, especially web development and machine learning. I'm
+            enjoys building structured projects using logical approaches and
+            focuses on creating clean and user-friendly interfaces.
+          </p>
+          <p class="ab">
+            I have experience developing academic applications using Dart and
+            building simple websites. I'm interested in problem solving, system
+            logic, and continuously improving technical skills.
+          </p>
+          <div class="foc">
+            <p class="fl">Core Focus Areas</p>
+            <div class="ft">
+              <span class="ftg">Logical Thinking</span>
+              <span class="ftg">Simple Effective Design</span
+              ><span class="ftg">Continuous Improvement</span>
+              <span class="ftg">Analytical Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="rev"><p class="sl">Projects</p><h2 class="st">What I've Built</h2><div class="sd"></div></div>
-  <div class="pg">
-    <div class="pc">
-      <p class="pn">01 — Landing Page</p>
-      <h3 class="pt">Logam Service</h3>
-      <p class="pd">A modern landing page website for an automotive workshop that provides repair, maintenance, and metal service solutions. The website presents company information, available services, workshop location with map integration, and contact access to help customers easily reach the workshop.</p>
-      <div class="pf">
-        <div class="pfi">Workshop profile & homepage overview</div>
-        <div class="pfi">Service information section</div>
-        <div class="pfi">Location details with maps integration</div>
-        <div class="pfi">Contact section for customer inquiries</div>
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="rev">
+        <p class="sl">Skills</p>
+        <h2 class="st">Tech Stack</h2>
+        <div class="sd"></div>
       </div>
-      <div class="pbs">
-        <a href="https://aadnauj.github.io/logam-service/" class="pbp"><svg class="bi" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Demo Project</a>
-        <a href="https://github.com/aadnauj/logam-service" class="pbo"><svg class="bi" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>Repository</a>
+      <div class="skg">
+        <div class="skc">
+          <div class="sko">
+            <svg fill="none" viewBox="0 0 24 24">
+              <path
+                d="M8 3L3 12l5 9M16 3l5 9-5 9M14 6l-4 12"
+                stroke="#2e8fff"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="skt">Programming</p>
+          <div class="sktg">
+            <span class="stg b">Dart</span><span class="stg b">Python</span
+            ><span class="stg b">JavaScript</span><span class="stg c">HTML</span
+            ><span class="stg c">CSS</span>
+          </div>
+        </div>
+        <div class="skc">
+          <div class="sko">
+            <svg fill="none" viewBox="0 0 24 24">
+              <rect
+                x="2"
+                y="3"
+                width="20"
+                height="14"
+                rx="2"
+                stroke="#00d4ff"
+                stroke-width="1.8"
+              />
+              <path
+                d="M8 21h8M12 17v4"
+                stroke="#00d4ff"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="skt">Development</p>
+          <div class="sktg">
+            <span class="stg c">Web Development</span
+            ><span class="stg b">Git & GitHub</span
+            ><span class="stg c">Responsive Layout</span
+            ><span class="stg b">UI Structure</span>
+          </div>
+        </div>
+        <div class="skc">
+          <div class="sko">
+            <svg fill="none" viewBox="0 0 24 24">
+              <circle
+                cx="12"
+                cy="12"
+                r="3"
+                stroke="#2e8fff"
+                stroke-width="1.8"
+              />
+              <path
+                d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"
+                stroke="#2e8fff"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="skt">Computer Science</p>
+          <div class="sktg">
+            <span class="stg s">Machine Learning</span
+            ><span class="stg b">Problem Solving</span
+            ><span class="stg c">Logical Thinking</span>
+          </div>
+        </div>
+        <div class="skc">
+          <div class="sko">
+            <svg fill="none" viewBox="0 0 24 24">
+              <path
+                d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"
+                stroke="#7ee8ff"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+              <circle cx="9" cy="7" r="4" stroke="#7ee8ff" stroke-width="1.8" />
+              <path
+                d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"
+                stroke="#7ee8ff"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="skt">Soft Skills</p>
+          <div class="sktg">
+            <span class="stg s">Analytical Mindset</span
+            ><span class="stg s">Structured Workflow</span
+            ><span class="stg s">Continuous Learning</span>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="pc">
-      <p class="pn">02 — Order</p>
-      <h3 class="pt">Simple Order Management Application</h3>
-      <p class="pd">A simple order management system with order input page, order detail page, and a pickup feature that removes completed orders automatically.</p>
-      <div class="pf">
-        <div class="pfi">Order input & detail pages</div>
-        <div class="pfi">Order list management</div>
-        <div class="pfi">Pickup order button</div>
-        <div class="pfi">Auto-removal of completed orders</div>
-      </div>
-      <div class="pbs">
-        <a href="#" class="pbp"><svg class="bi" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Demo Project</a>
-        <a href="#" class="pbo"><svg class="bi" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>Repository</a>
-      </div>
-    </div>
-    <div class="pc">
-      <p class="pn">03 — Portfolio</p>
-      <h3 class="pt">Personal Portfolio Website</h3>
-      <p class="pd">A modern portfolio website with clean layout and smooth animations to present profile, skills, and projects professionally.</p>
-      <div class="pf">
-        <div class="pfi">Modern UI design</div>
-        <div class="pfi">Smooth animations</div>
-        <div class="pfi">Responsive layout</div>
-        <div class="pfi">Professional appearance</div>
-      </div>
-      <div class="pbs">
-        <a href="#" class="pbp"><svg class="bi" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Demo Project</a>
-        <a href="#" class="pbo"><svg class="bi" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>Repository</a>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- EDUCATION -->
-<section id="education">
-  <div class="rev" style="text-align:center"><p class="sl" style="text-align:center">Education</p><h2 class="st" style="text-align:center">My Journey</h2><div class="sd" style="margin:0 auto 2.8rem"></div></div>
-  <div class="tl">
-    <div class="tll"></div>
-    <!-- University (Present) — left -->
-    <div class="ti">
-      <div class="td now"></div>
-      <div class="tc">
-        <div class="ty">2023 — Present</div>
-        <div class="ts">University</div>
-        <div class="tde">Bachelor of Computer Science. Focusing on web development and machine learning.</div>
-        <span class="tb2">Currently Enrolled</span>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="rev">
+        <p class="sl">Projects</p>
+        <h2 class="st">What I've Built</h2>
+        <div class="sd"></div>
       </div>
-    </div>
-    <!-- Student Pijak — right -->
-    <div class="ti r">
-      <div class="td"></div>
-      <div class="tc">
-        <div class="ty">January 2026 – June 2026</div>
-        <div class="ts">AI Engineer Cohort </div>
-        <div class="tde">Participated in the Pijak Independent Study program with a focus on AI Engineering.</div>
+      <div class="pg">
+        <div class="pc">
+          <p class="pn">01 — Landing Page</p>
+          <h3 class="pt">Logam Service</h3>
+          <p class="pd">
+            A modern landing page website for an automotive workshop that
+            provides repair, maintenance, and metal service solutions. The
+            website presents company information, available services, workshop
+            location with map integration, and contact access to help customers
+            easily reach the workshop.
+          </p>
+          <div class="pf">
+            <div class="pfi">Workshop profile & homepage overview</div>
+            <div class="pfi">Service information section</div>
+            <div class="pfi">Location details with maps integration</div>
+            <div class="pfi">Contact section for customer inquiries</div>
+          </div>
+          <div class="pbs">
+            <a href="https://aadnauj.github.io/logam-service/" class="pbp"
+              ><svg
+                class="bi"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                /></svg
+              >Demo Project</a
+            >
+            <a href="https://github.com/aadnauj/logam-service" class="pbo"
+              ><svg
+                class="bi"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                /></svg
+              >Repository</a
+            >
+          </div>
+        </div>
+        <div class="pc">
+          <p class="pn">02 — Order</p>
+          <h3 class="pt">Simple Order Management Application</h3>
+          <p class="pd">
+            A simple order management system with order input page, order detail
+            page, and a pickup feature that removes completed orders
+            automatically.
+          </p>
+          <div class="pf">
+            <div class="pfi">Order input & detail pages</div>
+            <div class="pfi">Order list management</div>
+            <div class="pfi">Pickup order button</div>
+            <div class="pfi">Auto-removal of completed orders</div>
+          </div>
+          <div class="pbs">
+            <a href="#" class="pbp"
+              ><svg
+                class="bi"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                /></svg
+              >Demo Project</a
+            >
+            <a href="#" class="pbo"
+              ><svg
+                class="bi"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                /></svg
+              >Repository</a
+            >
+          </div>
+        </div>
+        <div class="pc">
+          <p class="pn">03 — Portfolio</p>
+          <h3 class="pt">Personal Portfolio Website</h3>
+          <p class="pd">
+            A modern portfolio website with clean layout and smooth animations
+            to present profile, skills, and projects professionally.
+          </p>
+          <div class="pf">
+            <div class="pfi">Modern UI design</div>
+            <div class="pfi">Smooth animations</div>
+            <div class="pfi">Responsive layout</div>
+            <div class="pfi">Professional appearance</div>
+          </div>
+          <div class="pbs">
+            <a href="#" class="pbp"
+              ><svg
+                class="bi"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                /></svg
+              >Demo Project</a
+            >
+            <a href="#" class="pbo"
+              ><svg
+                class="bi"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                /></svg
+              >Repository</a
+            >
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- High School — left -->
-    <div class="ti">
-      <div class="td"></div>
-      <div class="tc">
-        <div class="ty">2020 — 2023</div>
-        <div class="ts">High School</div>
-        <div class="tde">Graduated from high school, majoring in Social Sciences.</div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="ci">
-    <div class="rev"><p class="sl">Contact</p><h2 class="st">Let's Connect</h2><div class="sd"></div></div>
-    <p class="cit rev">I'm always open to discussing new opportunities, collaborations, or just having a good conversation about technology. Feel free to reach out.</p>
-    <div class="cls rev">
-      <a href="mailto:juandaharefa1@email.com" class="cl">
-        <div class="cic"><svg fill="none" viewBox="0 0 24 24" stroke="#2e8fff" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-        <div><div class="clb">Email</div><div class="clv">juandaharefa1@email.com</div></div>
-        <svg class="ca" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="https://github.com/aadnauj" target="_blank" class="cl">
-        <div class="cic"><svg fill="none" viewBox="0 0 24 24" stroke="#2e8fff" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></div>
-        <div><div class="clb">GitHub</div><div class="clv">github.com/aadnauj</div></div>
-        <svg class="ca" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/juanda-harefa-04621331b" target="_blank" class="cl">
-        <div class="cic"><svg fill="none" viewBox="0 0 24 24" stroke="#2e8fff" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></div>
-        <div><div class="clb">LinkedIn</div><div class="clv">linkedin.com/in/juanda-harefa</div></div>
-        <svg class="ca" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-<script src="script.js"></script>
-<footer><p>Designed & built by <b>Juanda</b> · 2025</p></footer>
-</body>
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="rev" style="text-align: center">
+        <p class="sl" style="text-align: center">Education</p>
+        <h2 class="st" style="text-align: center">My Journey</h2>
+        <div class="sd" style="margin: 0 auto 2.8rem"></div>
+      </div>
+      <div class="tl">
+        <div class="tll"></div>
+        <!-- University (Present) — left -->
+        <div class="ti">
+          <div class="td now"></div>
+          <div class="tc">
+            <div class="ty">2023 — Present</div>
+            <div class="ts">University</div>
+            <div class="tde">
+              Bachelor of Computer Science. Focusing on web development and
+              machine learning.
+            </div>
+            <span class="tb2">Currently Enrolled</span>
+          </div>
+        </div>
+        <!-- Student Pijak — right -->
+        <div class="ti r">
+          <div class="td"></div>
+          <div class="tc">
+            <div class="ty">January 2026 – June 2026</div>
+            <div class="ts">AI Engineer Cohort</div>
+            <div class="tde">
+              Participated in the Pijak Independent Study program with a focus
+              on AI Engineering.
+            </div>
+          </div>
+        </div>
+        <!-- High School — left -->
+        <div class="ti">
+          <div class="td"></div>
+          <div class="tc">
+            <div class="ty">2020 — 2023</div>
+            <div class="ts">High School</div>
+            <div class="tde">
+              Graduated from high school, majoring in Social Sciences.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="ci">
+        <div class="rev">
+          <p class="sl">Contact</p>
+          <h2 class="st">Let's Connect</h2>
+          <div class="sd"></div>
+        </div>
+        <p class="cit rev">
+          I'm always open to discussing new opportunities, collaborations, or
+          just having a good conversation about technology. Feel free to reach
+          out.
+        </p>
+        <div class="cls rev">
+          <a href="mailto:juandaharefa1@email.com" class="cl">
+            <div class="cic">
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#2e8fff"
+                stroke-width="1.8"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div>
+              <div class="clb">Email</div>
+              <div class="clv">juandaharefa1@email.com</div>
+            </div>
+            <svg
+              class="ca"
+              width="16"
+              height="16"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="https://github.com/aadnauj" target="_blank" class="cl">
+            <div class="cic">
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#2e8fff"
+                stroke-width="1.8"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="clb">GitHub</div>
+              <div class="clv">github.com/aadnauj</div>
+            </div>
+            <svg
+              class="ca"
+              width="16"
+              height="16"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/juanda-harefa-04621331b"
+            target="_blank"
+            class="cl"
+          >
+            <div class="cic">
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#2e8fff"
+                stroke-width="1.8"
+              >
+                <path
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </div>
+            <div>
+              <div class="clb">LinkedIn</div>
+              <div class="clv">linkedin.com/in/juanda-harefa</div>
+            </div>
+            <svg
+              class="ca"
+              width="16"
+              height="16"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+      <p>Designed & built by <b>Juanda</b> · 2025</p>
+    </footer>
+  </body>
 </html>
