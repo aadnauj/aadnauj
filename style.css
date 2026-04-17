@@ -218,9 +218,6 @@ section{padding:95px 5vw}
 .ca{margin-left:auto;color:var(--td);transition:transform .2s,color .2s}
 .cl:hover .ca{transform:translateX(4px);color:var(--blue2)}
 
-footer{padding:1.6rem 5vw;text-align:center;border-top:1px solid var(--cb);
-  color:var(--td);font-size:.78rem}
-footer b{color:var(--blue2);font-weight:500}
 
 .rev{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}
 .rev.vis{opacity:1;transform:translateY(0)}
@@ -293,4 +290,42 @@ footer b{color:var(--blue2);font-weight:500}
   10%{opacity:1;}
   90%{opacity:.5;}
   100%{transform:translateY(-10px) translateX(var(--dx));opacity:0;}
+}
+.footer-wave{
+ position:relative;
+ width:100%;
+ line-height:0;
+ margin-top:120px;
+}
+
+.wave{
+ width:100vw;
+ height:160px;
+ object-fit:cover;
+ display:block;
+ opacity:.65;
+}
+
+.footer-text{
+ position:absolute;
+ top:55%;
+ left:50%;
+ transform:translate(-50%,-50%);
+ font-size:.9rem;
+ letter-spacing:.6px;
+ color:#e8f2ff;
+ white-space:nowrap;
+}
+
+.footer-text b{
+ color:#00d4ff;
+}
+
+#contact{
+ background:linear-gradient(
+   to bottom,
+   var(--bg2),
+   transparent
+ );
+ padding-bottom:0;
 }
