@@ -86,7 +86,7 @@ interests:
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-0A192F?style=for-the-badge\&logo=github\&logoColor=00F5FF)](https://github.com/YOUR_USERNAME)
+[![GitHub](https://img.shields.io/badge/GitHub-0A192F?style=for-the-badge\&logo=github\&logoColor=00F5FF)](https://aadnauj.github.io/aadnauj/)
 
 </div>
 
