@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ Juanda
+# git commit -m "Hello everyone, i'm Ju"
 
 ### AI Enthusiast • Vibe Coder • Future AI Engineer
 
@@ -13,8 +13,8 @@
 ## 🧠 About Me
 
 ```yaml
-name: Juanda
-role: Informatics Student
+name: Juanda Harefa
+role: Information Technology
 focus: Artificial Intelligence
 mindset: Logical, Strategic, Consistent
 interests:
